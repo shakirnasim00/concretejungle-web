@@ -1,0 +1,766 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+   
+}
+
+body {
+    background: #090909;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.navbar {
+    font-family: 'Basic';
+    background: #090909;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo {
+    background-color: #090909;
+    background-image: linear-gradient(to top, #FFF 0%, #000, 100%);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item {
+    height: 80px;
+}
+
+.navbar_links {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: rgb(51, 52, 52);
+    color: white;
+}
+
+.button:hover {
+    background: rgb(238, 68, 20);
+    transition: all 0.4s ease;
+}
+
+.navbar_links:hover {
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.heading {
+    position: relative;
+    width: 100%;
+    height: 110vh; /* This will make the image cover the entire viewport height */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+  }
+
+  .header_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    z-index: -1; /* Pushes the image behind the text */
+    opacity: 0.5;
+  }
+
+  .heading-content-1 {
+    position: absolute;
+    top: 28rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+    z-index: 1; /* Ensures text appears above the image */
+    font-family: 'Oswald';
+    line-height: 2rem;
+  }
+
+  .heading-content-2 {
+    position: absolute;
+    top: 42rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+    z-index: 1; /* Ensures text appears above the image */
+    font-family: 'Oswald';
+    line-height: 2rem;
+  }
+
+hr{
+    margin: 20px auto;
+    width: 5%;
+    height: 1px;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+}
+
+.training {
+    color: white;
+    margin: 0 auto;
+    /* height: 10rem; */
+    width: 75%;
+    word-spacing: 1px;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.training a {
+    color: white;
+    text-decoration: underline;
+}
+
+.training a:hover {
+    color: rgb(238, 68, 20);
+
+}
+
+.open-gym {
+    margin: 0 auto;
+    height: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Staff Page CSS */
+
+.staff-container {
+    margin: 20px 40px;
+    color: white;
+}
+.staff-heading {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 6.5rem;
+}
+
+.coaches {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.75rem 80px;
+    color: white;
+}
+
+.coach {
+    flex-basis: 375px;
+}
+
+.coach .coach-img {
+    height: 250px;
+    width: 250px;
+    border-radius:50%;
+    cursor: pointer;
+    filter: grayscale(0);
+}
+
+.coach:hover .coach-img {
+    filter: grayscale(0)
+}
+
+.user-name {
+    margin-top: 30px;
+    font-size: 1.5rem;
+
+}
+
+.coach h5 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin: 5px 0px;
+    color: darkgray;
+} 
+
+.coach p {
+    font-size: 1rem;
+    font-weight:200
+}
+/* Footer CSS */
+
+footer {
+    display: inline-flex;
+    background-color: rgb(23, 23, 23);
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+
+.footer-heading {
+    display: block;
+    text-align: left;
+    font-weight: 300;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading h2 {
+    font-size: 2.0rem;
+    color: white;
+    font-weight: 200;
+}
+
+
+.footer-contact {
+    display: block;
+    padding: 20px;
+}
+
+.footer-contact p {
+    margin-left: 7px;
+}
+
+.footer-contact h5 {
+    color: rgb(238, 68, 20);
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 7px;
+}
+
+
+.contact-listing {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.contact-listing p {
+    margin-left: 0.5rem;
+}
+
+/* Teams CSS */
+
+.rosters {
+    display: flex;
+    width: 100%;
+    height: 42rem;
+    background-image: url(./assets/grey-black-arrowbg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.roster-placeholder-img {
+margin-top: 4rem;
+margin-left: 4rem;
+height: 35rem;
+border-radius: 25%;
+}
+
+.rosters-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+    padding: 5rem;
+    align-self: center;
+}
+
+.rosters-text h4 {
+    color: rgb(238, 68, 20);
+}
+
+.rosters-text button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .rosters-text button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(262, 100%, 3%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+  }
+
+  /* Training CSS */
+  .training-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #090909;
+    height: 50rem;
+  }
+
+.training-header {
+    position: relative;
+    text-align: center;
+    font-weight: 200;
+      
+}
+
+.training-text-and-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.training-text {
+    overflow: visible;
+    overflow-wrap: break-word;
+    max-width: 30%;
+    margin-top: 8rem;
+    margin-left: 6rem;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+.training-picture {
+    height: 375;
+    width: 375;
+    height: 32rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    box-shadow: 30px 30px rgb(72, 72, 72);
+}
+    
+.training-body a {
+    text-decoration: none;
+    font-weight: bold;
+    color:  rgb(238, 68, 20);
+}
+
+.training-body a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Us CSS */
+
+.contact-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 65rem;
+    width: 100%;
+    background-image: url(./assets/lucas-ball.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-decoration: none;
+}
+
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    width: 60%;
+    background-color: #333333f6;
+  padding: 1rem;
+  border-radius: 8px;
+  /* border: 4px solid #ffffff; */
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 275px;
+  align-items: center;
+}
+.contact-box a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.contact-box h1 {
+    text-align: center;
+   
+}
+
+.contact-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-title h1 {
+    font-weight: 500;
+}
+.contact-title {
+    margin-bottom: 2rem;
+}
+
+
+.contactus-line {
+    width: 18rem;
+    background:hsl(0 0% 10%);
+    color: #ffffff;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+
+.contactus-line-2 {
+    width: 18rem;
+    background:hsl(0 0% 10%);
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contactus-line p {
+    margin-left: 1rem;
+    align-items: center;
+    justify-self: center;
+    margin-top: -1px;
+}
+
+.contactus-line-2 p {
+    margin-left: 1rem;
+    margin-top: -1px;
+    align-items: center;
+    justify-self: center;
+}
+
+.social-button{
+    /* margin-bottom: 2.5rem; */
+    width: 18rem;
+    background:hsl(0 0% 10%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    padding:1rem;
+    border-radius:100vw;
+    display:flex;
+    align-items:center;
+    color:white;
+    overflow: hidden;
+  }
+
+  .social-button p{
+    margin-left: 1rem;
+    vertical-align: middle;
+    margin-top: -1px;
+  }
+
+  .contactus-line:hover {
+    font-weight: lighter;
+    background: rgb(238, 68, 20);
+    transition: 1s;
+    color: #ffffff;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.contactus-line-2:hover {
+   
+    font-weight: lighter;
+    background: rgb(238, 68, 20);
+    transition: 1s;
+    color: #ffffff;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-button:hover {
+    background: rgb(238, 68, 20);
+    transition: 1s ; /* Standard */
+    text-decoration: none;
+}
+/* --------------- Responsive CSS for Mobile Below -------------------------- */
+@media screen and (max-width: 960px) {
+    
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #090909;
+    }
+
+    .navbar_menu.active {
+        background: #090909;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar_logo {
+        padding-left: 25px;
+    }
+
+    .navbar_toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #FFF;
+    }
+    .navbar_item {
+        width: 100;
+    }
+    .navbar_links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_btn {
+        padding-bottom: 2rem;
+        
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 5px 10px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: rgb(51, 52, 52);
+        color: white;
+    }
+    
+    .button:hover {
+        background: rgb(238, 68, 20);
+        transition: all 0.4s ease;
+    }
+
+    .coaches {
+        flex-direction: column;
+        margin: 1.0rem 4.5rem;
+    }
+    .coach {
+        flex-basis: 260px;
+        margin-top: 4.5rem;
+    }
+    .staff-heading {
+    color: white;
+    font-weight: 10;
+    text-align: left;
+    margin: 0rem 2.0rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-heading {
+        display: block;
+        text-align: left;
+        font-weight: 300;
+        width: 65%; 
+    }
+
+    .rosters {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 45rem;
+    }
+
+    .rosters-image {
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+        margin-left: 0;
+    }
+    .roster-placeholder-img {
+        height: 25rem;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .rosters-text {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        height: 10rem;
+
+    }
+    .rosters-text h4 {
+        margin-bottom: 0.75rem;
+    }
+    .rosters-text h2 {
+        margin-bottom: 1rem;
+        
+    }
+
+    .training-body {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 60rem;
+        width: auto;
+    }
+
+    .training-header {
+        margin-bottom: 14px;
+        position: relative;
+    }
+
+    .training-text-and-image {
+        display: flex;
+        flex-direction: column;
+    }
+    .training-text {
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 80%;
+        height: 20rem;
+        overflow-wrap: break-word;
+        max-width: 85%;
+    }
+
+    .training-picture {
+        margin: 0 auto;
+        width: 300px;
+        height: auto;
+        box-shadow:  10px 10px rgb(72, 72, 72);
+
+    }
+
+    .social-button{
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+
+    .contactus-line-2 {
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+    .contactus-line {
+       width: 12rem;
+       font-size: 0.8rem;
+    }
+    .contactus-line p {
+        margin-left: 0.5rem;
+        align-items: center;
+        justify-self: center;
+        margin-top: -1px;
+    }
+    .contactus-line-2 p {
+        margin-left: 0.5rem;
+        align-items: center;
+        justify-self: center;
+        margin-top: -1px;
+    }
+    
+}
