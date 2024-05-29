@@ -242,6 +242,11 @@ footer {
     align-items: center;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 .footer-heading {
     display: block;
     text-align: left;
@@ -263,6 +268,11 @@ footer {
     padding: 20px;
 }
 
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
 .footer-contact p {
     margin-left: 7px;
 }
@@ -277,6 +287,7 @@ footer {
 
 .contact-listing {
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 0.5rem;
     text-decoration: none;
@@ -529,6 +540,16 @@ border-radius: 25%;
 }
 /* --------------- Responsive CSS for Mobile Below -------------------------- */
 @media screen and (max-width: 960px) {
+
+    .heading-content-1 {
+        position: absolute;
+        top: 24rem;
+    }
+
+    .heading-content-2 {
+        position: absolute;
+        top: 38rem;
+    }
     
     .navbar_container {
         display: flex;
@@ -547,7 +568,7 @@ border-radius: 25%;
         position: absolute;
         top: -1000px;
         opacity: 0;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in;
         height: 50vh;
         z-index: -1;
         background: #090909;
@@ -557,7 +578,7 @@ border-radius: 25%;
         background: #090909;
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
@@ -571,7 +592,7 @@ border-radius: 25%;
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in;
         background: #FFF;
     }
     .navbar_item {
@@ -666,6 +687,11 @@ border-radius: 25%;
         text-align: left;
         font-weight: 300;
         width: 65%; 
+    }
+
+    .footer-contact a {
+        color: white;
+        text-decoration: none;
     }
 
     .rosters {
